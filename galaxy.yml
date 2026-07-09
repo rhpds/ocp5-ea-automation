@@ -1,0 +1,25 @@
+---
+namespace: rhdp
+name: workshop
+version: 1.0.0
+readme: README.md
+authors:
+  - Red Hat Demo Platform <rhpds@redhat.com>
+
+description: Ansible collection for deploying the OpenShift 5 Early Access hosted environment
+
+license:
+  - GPL-2.0-or-later
+
+tags:
+  - openshift
+  - workshop
+  - ocp5
+  - early_access
+
+dependencies: {}
+
+build_ignore:
+  - .git
+  - .gitignore
+  - .DS_Store
