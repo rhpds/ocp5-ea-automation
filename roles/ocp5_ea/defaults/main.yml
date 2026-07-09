@@ -19,6 +19,7 @@ ocp5_ea_openshift_gitops_operator_automatic_install_plan_approval: true
 ocp5_ea_openshift_gitops_operator_starting_csv: ""
 ocp5_ea_openshift_gitops_operator_name: openshift-gitops-operator
 ocp5_ea_openshift_gitops_operator_namespace: openshift-operators
+# Catalog source pinning for GitOps operator — placeholder for future pinning
 ocp5_ea_openshift_gitops_operator_catalog: redhat-operators
 ocp5_ea_openshift_gitops_operator_use_catalog_snapshot: false
 ocp5_ea_openshift_gitops_operator_catalogsource_name: ""
@@ -97,6 +98,9 @@ ocp5_ea_openshift_gitops_ignore_differences: {}
 
 # ------------------------------------------------
 # Operator catalog source pinning (Helm app-of-apps)
+# Placeholder for future pinning — disabled by default.
+# When enabled, a frozen OLM catalog snapshot is deployed and all operator
+# subscriptions use it instead of the live redhat-operators catalog.
 # ------------------------------------------------
 
 ocp5_ea_catalog_source_enabled: false
@@ -110,6 +114,6 @@ ocp5_ea_catalog_source_tag: v4.20_2026_02_11
 # ------------------------------------------------
 
 ocp5_ea_acs_application_name: acs
-ocp5_ea_acs_namespace: stackrox
+ocp5_ea_acs_namespace: acs
 ocp5_ea_acs_clustername: local-cluster
 ocp5_ea_acs_adminpassword: "{{ common_password }}"

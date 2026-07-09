@@ -37,6 +37,7 @@ spec:
         argocd:
           namespace: openshift-gitops
 
+        # Placeholder for future operator version pinning via frozen OLM catalog snapshot
         catalogSource:
           enabled: {{ ocp5_ea_catalog_source_enabled }}
           name: {{ ocp5_ea_catalog_source_name }}
