@@ -58,3 +58,13 @@ spec:
           namespace: {{ ocp5_ea_acs_namespace }}
           clusterName: {{ ocp5_ea_acs_clustername }}
           adminPassword: {{ ocp5_ea_acs_adminpassword }}
+
+        openshiftLightspeed:
+          enabled: true
+          name: openshift-lightspeed
+          namespace: openshift-lightspeed
+          llm:
+            apiUrl: "{{ ocp5_ea_litellm_api_url }}"
+            apiKey: "{{ ocp5_ea_litellm_api_key }}"
+            provider: "{{ ocp5_ea_litellm_provider }}"
+            model: "{{ ocp5_ea_litellm_model }}"

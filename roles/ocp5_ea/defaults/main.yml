@@ -129,3 +129,13 @@ ocp5_ea_acs_application_name: acs
 ocp5_ea_acs_namespace: acs
 ocp5_ea_acs_clustername: local-cluster
 ocp5_ea_acs_adminpassword: "{{ common_password }}"
+
+# ------------------------------------------------
+# LiteLLM / OpenShift Lightspeed
+# ------------------------------------------------
+ocp5_ea_litellm_api_url: >-
+  {{ lookup('agnosticd_user_data', 'litellm_api_base_url') | default('') }}
+ocp5_ea_litellm_api_key: >-
+  {{ lookup('agnosticd_user_data', 'litellm_virtual_key') | default('') }}
+ocp5_ea_litellm_provider: openai
+ocp5_ea_litellm_model: qwen3-235b
