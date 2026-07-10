@@ -113,6 +113,18 @@ ocp5_ea_catalog_source_tag: v4.20_2026_02_11
 # Red Hat Advanced Cluster Security
 # ------------------------------------------------
 
+# ------------------------------------------------
+# OCP 5.0 console cert workaround
+# ------------------------------------------------
+ocp5_ea_console_cert_workaround: true
+ocp5_ea_console_cert_source_secret: cert-manager-ingress-cert
+ocp5_ea_console_cert_source_namespace: openshift-ingress
+ocp5_ea_console_cert_target_secret: console-serving-cert
+
+# ------------------------------------------------
+# Red Hat Advanced Cluster Security
+# ------------------------------------------------
+
 ocp5_ea_acs_application_name: acs
 ocp5_ea_acs_namespace: acs
 ocp5_ea_acs_clustername: local-cluster

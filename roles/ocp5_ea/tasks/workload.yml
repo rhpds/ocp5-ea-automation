@@ -39,6 +39,10 @@
   ansible.builtin.set_fact:
     r_openshift_api_server: "{{ r_api_url.resources[0].status.apiServerURL }}"
 
+- name: Apply OCP 5.0 console cert workaround
+  when: ocp5_ea_console_cert_workaround | bool
+  ansible.builtin.include_tasks: console_cert_workaround.yml
+
 - name: Install OpenShift Gitops
   when: ocp5_ea_openshift_gitops_install | bool
   ansible.builtin.include_tasks: openshift_gitops.yml
