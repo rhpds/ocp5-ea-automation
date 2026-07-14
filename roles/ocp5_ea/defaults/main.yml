@@ -139,3 +139,8 @@ ocp5_ea_litellm_api_key: >-
   {{ lookup('agnosticd_user_data', 'litellm_virtual_key') | default('') }}
 ocp5_ea_litellm_provider: openai
 ocp5_ea_litellm_model: qwen3-235b
+
+# ------------------------------------------------
+# oc-agentic CLI plugin
+# ------------------------------------------------
+ocp5_ea_install_oc_agentic: true

@@ -80,6 +80,10 @@
 - name: Deploy app-of-apps
   ansible.builtin.include_tasks: app_of_apps.yml
 
+- name: Install oc-agentic CLI plugin on bastion
+  when: ocp5_ea_install_oc_agentic | bool
+  ansible.builtin.include_tasks: install_oc_agentic.yml
+
 - name: Install Showroom
   ansible.builtin.include_tasks: showroom.yml
 
