@@ -77,6 +77,10 @@
       openshift_gitops_user: "admin"
       openshift_gitops_password: "{{ openshift_gitops_admin_password }}"
 
+- name: Merge ACS nightly pull secret into global pull secret
+  when: ocp5_ea_acs_pull_secret | default('') | length > 0
+  ansible.builtin.include_tasks: merge_global_pull_secret.yml
+
 - name: Deploy app-of-apps
   ansible.builtin.include_tasks: app_of_apps.yml
 
