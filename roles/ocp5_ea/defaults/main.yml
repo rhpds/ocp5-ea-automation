@@ -135,7 +135,7 @@ ocp5_ea_acs_adminpassword: "{{ common_password }}"
 # ------------------------------------------------
 ocp5_ea_llm_api_url: "https://ols-test.openai.azure.com/openai/v1"
 ocp5_ea_llm_api_key: ""
-ocp5_ea_llm_api_model: "gpt-5"
+ocp5_ea_llm_api_model: "gpt-5.4"
 ocp5_ea_llm_api_provider: "openai"
 
 # ------------------------------------------------
