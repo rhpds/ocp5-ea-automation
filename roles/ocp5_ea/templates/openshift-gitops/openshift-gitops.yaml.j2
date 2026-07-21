@@ -26,6 +26,11 @@ spec:
         cpu: "{{ ocp5_ea_openshift_gitops_repo_requests_cpu }}"
         memory: "{{ ocp5_ea_openshift_gitops_repo_requests_memory }}"
 {% endif %}
+  rbac:
+    defaultPolicy: ""
+    policy: |
+      g, admin, role:admin
+    scopes: '[groups, preferred_username]'
   server:
 {% if ocp5_ea_openshift_gitops_enable_route | bool %}
     route:
