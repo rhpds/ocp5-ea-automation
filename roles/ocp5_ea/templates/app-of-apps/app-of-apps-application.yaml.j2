@@ -59,9 +59,9 @@ spec:
           clusterName: {{ ocp5_ea_acs_clustername }}
           adminPassword: {{ ocp5_ea_acs_adminpassword }}
 
-        openshiftLightspeed:
+        openshiftAgenticLightspeed:
           enabled: true
-          name: openshift-lightspeed
+          name: openshift-agentic-lightspeed
           namespace: openshift-lightspeed
           llm:
             apiUrl: "{{ ocp5_ea_llm_api_url }}"
