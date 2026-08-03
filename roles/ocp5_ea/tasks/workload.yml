@@ -88,6 +88,10 @@
   when: ocp5_ea_install_oc_agentic | bool
   ansible.builtin.include_tasks: install_oc_agentic.yml
 
+- name: Install FastMCP CLI on bastion
+  when: ocp5_ea_install_fastmcp | bool
+  ansible.builtin.include_tasks: install_fastmcp.yml
+
 - name: Install Showroom
   ansible.builtin.include_tasks: showroom.yml
 
