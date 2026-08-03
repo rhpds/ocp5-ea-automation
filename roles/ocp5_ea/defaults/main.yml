@@ -20,12 +20,12 @@ ocp5_ea_openshift_gitops_operator_starting_csv: ""
 ocp5_ea_openshift_gitops_operator_name: openshift-gitops-operator
 ocp5_ea_openshift_gitops_operator_namespace: openshift-operators
 # Catalog source pinning for GitOps operator — placeholder for future pinning
-ocp5_ea_openshift_gitops_operator_catalog: redhat-operators
-ocp5_ea_openshift_gitops_operator_use_catalog_snapshot: false
-ocp5_ea_openshift_gitops_operator_catalogsource_name: ""
-ocp5_ea_openshift_gitops_operator_catalogsource_namespace: openshift-operators
-ocp5_ea_openshift_gitops_operator_catalog_snapshot_image: ""
-ocp5_ea_openshift_gitops_operator_catalog_snapshot_image_tag: ""
+ocp5_ea_openshift_gitops_operator_catalog: redhat-operators-v422
+ocp5_ea_openshift_gitops_operator_use_catalog_snapshot: true
+ocp5_ea_openshift_gitops_operator_catalogsource_name: redhat-operators-v422
+ocp5_ea_openshift_gitops_operator_catalogsource_namespace: openshift-marketplace
+ocp5_ea_openshift_gitops_operator_catalog_snapshot_image: quay.io/rhpds/olm_snapshot_redhat_catalog
+ocp5_ea_openshift_gitops_operator_catalog_snapshot_image_tag: v4.22_2026_08_03
 
 ocp5_ea_openshift_gitops_operator_config:
   env:
@@ -103,11 +103,11 @@ ocp5_ea_openshift_gitops_ignore_differences: {}
 # subscriptions use it instead of the live redhat-operators catalog.
 # ------------------------------------------------
 
-ocp5_ea_catalog_source_enabled: false
-ocp5_ea_catalog_source_name: redhat-operators-snapshot
+ocp5_ea_catalog_source_enabled: true
+ocp5_ea_catalog_source_name: redhat-operators-v422
 ocp5_ea_catalog_source_namespace: openshift-marketplace
-ocp5_ea_catalog_source_image: quay.io/gpte-devops-automation/olm_snapshot_redhat_catalog
-ocp5_ea_catalog_source_tag: v4.20_2026_02_11
+ocp5_ea_catalog_source_image: quay.io/rhpds/olm_snapshot_redhat_catalog
+ocp5_ea_catalog_source_tag: v4.22_2026_08_03
 
 # ------------------------------------------------
 # Red Hat Advanced Cluster Security
