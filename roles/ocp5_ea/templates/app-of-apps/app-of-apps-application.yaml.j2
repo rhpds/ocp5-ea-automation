@@ -59,6 +59,11 @@ spec:
           clusterName: {{ ocp5_ea_acs_clustername }}
           adminPassword: {{ ocp5_ea_acs_adminpassword }}
 
+        agenticUpdatesBuilds:
+          enabled: true
+          name: agentic-updates-builds
+          namespace: openshift-lightspeed
+
         openshiftAgenticLightspeed:
           enabled: true
           name: openshift-agentic-lightspeed
