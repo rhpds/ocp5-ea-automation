@@ -59,6 +59,11 @@ spec:
           clusterName: {{ ocp5_ea_acs_clustername }}
           adminPassword: {{ ocp5_ea_acs_adminpassword }}
 
+        consoleBuild:
+          enabled: true
+          name: console-build
+          namespace: console-build
+
         agenticUpdatesBuilds:
           enabled: true
           name: agentic-updates-builds
