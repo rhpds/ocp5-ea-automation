@@ -152,4 +152,4 @@ ocp5_ea_install_oc_agentic: true
 # FastMCP CLI (MCP Gateway exercises)
 # ------------------------------------------------
 ocp5_ea_install_fastmcp: true
-ocp5_ea_fastmcp_version: "3.4.5"
+ocp5_ea_fastmcp_version: "3.4.7"
