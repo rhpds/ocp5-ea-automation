@@ -59,8 +59,9 @@ spec:
           clusterName: {{ ocp5_ea_acs_clustername }}
           adminPassword: {{ ocp5_ea_acs_adminpassword }}
 
+        # Custom console build — disabled since EC6 includes the layout fix
         consoleBuild:
-          enabled: true
+          enabled: false
           name: console-build
           namespace: console-build
 
