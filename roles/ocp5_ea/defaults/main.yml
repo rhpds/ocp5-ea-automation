@@ -114,12 +114,12 @@ ocp5_ea_catalog_source_tag: v4.22_2026_08_03
 # ------------------------------------------------
 
 # ------------------------------------------------
-# OCP 5.0 console cert workaround
+# OCP 5.0 console cert workaround (disabled for rc.0+)
 # ------------------------------------------------
-ocp5_ea_console_cert_workaround: true
-ocp5_ea_console_cert_source_secret: cert-manager-ingress-cert
-ocp5_ea_console_cert_source_namespace: openshift-ingress
-ocp5_ea_console_cert_target_secret: console-serving-cert
+ocp5_ea_console_cert_workaround: false
+# ocp5_ea_console_cert_source_secret: cert-manager-ingress-cert
+# ocp5_ea_console_cert_source_namespace: openshift-ingress
+# ocp5_ea_console_cert_target_secret: console-serving-cert
 
 # ------------------------------------------------
 # Red Hat Advanced Cluster Security
